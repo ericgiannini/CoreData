@@ -22,7 +22,9 @@
     
     [self persistentStoreCoordinator];
     
+    NSManagedObjectContext *moc = [self managedObjectContext];
     
+    NSAssert(moc !=  nil, @"Unable to create Managed Object Context");
     
     return YES;
 }
