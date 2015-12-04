@@ -20,6 +20,10 @@
     
     [self managedObjectContext];
     
+    [self persistentStoreCoordinator];
+    
+    
+    
     return YES;
 }
 
