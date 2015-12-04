@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Automatic">
+    <entity name="ChoreLog" representedClassName="ChoreLogMO" syncable="YES">
+        <attribute name="finish_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="chore_done" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chores" inverseName="chore_log" inverseEntity="Chores" syncable="YES"/>
+        <relationship name="chore_person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="chore_log" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Chores" representedClassName="ChoreMO" syncable="YES">
+        <attribute name="chore_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chore_log" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChoreLog" inverseName="chore_done" inverseEntity="ChoreLog" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="PersonMO" syncable="YES">
+        <attribute name="person_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chore_log" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChoreLog" inverseName="chore_person" inverseEntity="ChoreLog" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Chores" positionX="-344" positionY="-54" width="128" height="73"/>
+        <element name="Person" positionX="72" positionY="-54" width="128" height="73"/>
+        <element name="ChoreLog" positionX="-155" positionY="-36" width="128" height="88"/>
+    </elements>
 </model>
