@@ -14,6 +14,12 @@
 		995E346C1C112EA600B756CC /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 995E346A1C112EA600B756CC /* CoreData.xcdatamodeld */; };
 		995E346E1C112EA600B756CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 995E346D1C112EA600B756CC /* Assets.xcassets */; };
 		995E34711C112EA600B756CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995E346F1C112EA600B756CC /* LaunchScreen.storyboard */; };
+		995E34841C114B7800B756CC /* PersonMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 995E34791C114B7800B756CC /* PersonMO+CoreDataProperties.m */; };
+		995E34851C114B7800B756CC /* PersonMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 995E347B1C114B7800B756CC /* PersonMO.m */; };
+		995E34861C114B7800B756CC /* ChoreMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 995E347D1C114B7800B756CC /* ChoreMO+CoreDataProperties.m */; };
+		995E34871C114B7800B756CC /* ChoreMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 995E347F1C114B7800B756CC /* ChoreMO.m */; };
+		995E34881C114B7800B756CC /* ChoreLogMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 995E34811C114B7800B756CC /* ChoreLogMO+CoreDataProperties.m */; };
+		995E34891C114B7800B756CC /* ChoreLogMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 995E34831C114B7800B756CC /* ChoreLogMO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,18 @@
 		995E346D1C112EA600B756CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		995E34701C112EA600B756CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		995E34721C112EA600B756CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		995E34781C114B7800B756CC /* PersonMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PersonMO+CoreDataProperties.h"; path = "CoreData/PersonMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		995E34791C114B7800B756CC /* PersonMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PersonMO+CoreDataProperties.m"; path = "CoreData/PersonMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		995E347A1C114B7800B756CC /* PersonMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonMO.h; path = CoreData/PersonMO.h; sourceTree = "<group>"; };
+		995E347B1C114B7800B756CC /* PersonMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonMO.m; path = CoreData/PersonMO.m; sourceTree = "<group>"; };
+		995E347C1C114B7800B756CC /* ChoreMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ChoreMO+CoreDataProperties.h"; path = "CoreData/ChoreMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		995E347D1C114B7800B756CC /* ChoreMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ChoreMO+CoreDataProperties.m"; path = "CoreData/ChoreMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		995E347E1C114B7800B756CC /* ChoreMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoreMO.h; path = CoreData/ChoreMO.h; sourceTree = "<group>"; };
+		995E347F1C114B7800B756CC /* ChoreMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoreMO.m; path = CoreData/ChoreMO.m; sourceTree = "<group>"; };
+		995E34801C114B7800B756CC /* ChoreLogMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ChoreLogMO+CoreDataProperties.h"; path = "CoreData/ChoreLogMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		995E34811C114B7800B756CC /* ChoreLogMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ChoreLogMO+CoreDataProperties.m"; path = "CoreData/ChoreLogMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		995E34821C114B7800B756CC /* ChoreLogMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoreLogMO.h; path = CoreData/ChoreLogMO.h; sourceTree = "<group>"; };
+		995E34831C114B7800B756CC /* ChoreLogMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoreLogMO.m; path = CoreData/ChoreLogMO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,18 @@
 		995E34521C112EA600B756CC = {
 			isa = PBXGroup;
 			children = (
+				995E34781C114B7800B756CC /* PersonMO+CoreDataProperties.h */,
+				995E34791C114B7800B756CC /* PersonMO+CoreDataProperties.m */,
+				995E347A1C114B7800B756CC /* PersonMO.h */,
+				995E347B1C114B7800B756CC /* PersonMO.m */,
+				995E347C1C114B7800B756CC /* ChoreMO+CoreDataProperties.h */,
+				995E347D1C114B7800B756CC /* ChoreMO+CoreDataProperties.m */,
+				995E347E1C114B7800B756CC /* ChoreMO.h */,
+				995E347F1C114B7800B756CC /* ChoreMO.m */,
+				995E34801C114B7800B756CC /* ChoreLogMO+CoreDataProperties.h */,
+				995E34811C114B7800B756CC /* ChoreLogMO+CoreDataProperties.m */,
+				995E34821C114B7800B756CC /* ChoreLogMO.h */,
+				995E34831C114B7800B756CC /* ChoreLogMO.m */,
 				995E345D1C112EA600B756CC /* CoreData */,
 				995E345C1C112EA600B756CC /* Products */,
 			);
@@ -154,9 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				995E346C1C112EA600B756CC /* CoreData.xcdatamodeld in Sources */,
+				995E34871C114B7800B756CC /* ChoreMO.m in Sources */,
 				995E34661C112EA600B756CC /* ViewController.m in Sources */,
+				995E34861C114B7800B756CC /* ChoreMO+CoreDataProperties.m in Sources */,
+				995E34841C114B7800B756CC /* PersonMO+CoreDataProperties.m in Sources */,
 				995E34631C112EA600B756CC /* AppDelegate.m in Sources */,
+				995E34851C114B7800B756CC /* PersonMO.m in Sources */,
 				995E34601C112EA600B756CC /* main.m in Sources */,
+				995E34891C114B7800B756CC /* ChoreLogMO.m in Sources */,
+				995E34881C114B7800B756CC /* ChoreLogMO+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

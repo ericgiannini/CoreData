@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ChoreMO.h"
-#import "PersonMO.h"
-#import "ChoreLogMO.h"
+
 
 
 @interface AppDelegate ()
@@ -63,7 +61,7 @@
 - (ChoreMO *) createChoreMO{
     NSManagedObjectContext *moc = [self managedObjectContext];
     
-    ChoreMO *choreMO = [NSEntityDescription insertNewObjectForEntityForName:@"Chore" inManagedObjectContext:moc];
+    ChoreMO *choreMO = [NSEntityDescription insertNewObjectForEntityForName:@"Chores" inManagedObjectContext:moc];
     
     return choreMO;
 }
@@ -79,7 +77,7 @@
 - (ChoreLogMO *) createChoreLogMO {
     NSManagedObjectContext *moc = [self managedObjectContext];
     
-    ChoreLogMO *choreLogMO = [NSEntityDescription insertNewObjectForEntityForName:@"Log" inManagedObjectContext:moc];
+    ChoreLogMO *choreLogMO = [NSEntityDescription insertNewObjectForEntityForName:@"ChoreLog" inManagedObjectContext:moc];
     
     return choreLogMO;
     
