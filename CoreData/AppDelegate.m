@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ChoreMO.h"
+
 
 @interface AppDelegate ()
 
@@ -52,6 +54,18 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+
+#pragma mark - My Managed Object Code 
+
+
+- (ChoreMO *) createChoreMO{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    
+    ChoreMO *choreMO = [NSEntityDescription insertNewObjectForEntityForName:@"Chore" inManagedObjectContext:moc];
+    
+    return choreMO;
+}
+
 
 #pragma mark - Core Data stack
 
