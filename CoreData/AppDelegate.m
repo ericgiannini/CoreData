@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ChoreMO.h"
+#import "PersonMO.h"
 
 
 @interface AppDelegate ()
@@ -64,6 +65,14 @@
     ChoreMO *choreMO = [NSEntityDescription insertNewObjectForEntityForName:@"Chore" inManagedObjectContext:moc];
     
     return choreMO;
+}
+
+- (PersonMO *) createPersonMO {
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    
+    PersonMO *personMO = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:moc];
+    
+    return personMO;
 }
 
 
